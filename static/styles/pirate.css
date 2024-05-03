@@ -1,0 +1,118 @@
+
+:root{
+    --light: #e7cf90;
+    --main: #ac4c4e;
+    --dark: #462443;
+    --black: #1a0818;
+}
+
+main{
+    height: 100%;
+    background: url("/images/mountain.jpg");
+    background-size: cover;
+    background-position-y: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav{
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+nav .links{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav .links .active{
+    color: var(--dark);
+    background: var(--light);
+    padding: 2px 8px;
+    border-radius: 50px;
+}
+
+nav .logoContainer{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+nav .logoContainer .logoIcon{
+    aspect-ratio: 1;
+    height: 36px;
+    background: url("/svgs/pirate.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+nav .links a,
+nav .logoContainer .logoText{
+    text-decoration: none;
+    color: var(--light);
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.cta{
+    text-align: center;
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta .title{
+    font-size: 4.5em;
+    font-weight: 500;
+    padding-left: 230px;
+    margin: 45px 0;
+    background: linear-gradient(15deg, var(--light) 45%, var(--main));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cta .description{
+    width: 420px;
+    margin: 0px;
+    line-height: 24px;
+}
+
+.media{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+}
+
+.media .icon{
+    aspect-ratio: 1;
+    height: 32px;
+    background: red;
+    display: inline-block;
+}
+
+.icon.one{
+    background: url("/svgs/instagram.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.icon.two{
+    background: url("/svgs/github.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.icon.three{
+    background: url("/svgs/twitter.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

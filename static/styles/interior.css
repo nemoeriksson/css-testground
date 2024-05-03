@@ -208,6 +208,7 @@ section.about{
     width: fit-content;
     padding: 4px 14px;
     font-size: 1.2em;
+    cursor: pointer;
 }
 
 .cta::before{
